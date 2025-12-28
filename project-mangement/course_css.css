@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f5f7fb;
+}
+
+/* HEADER */
+.top-bar {
+  background: #ffffff;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.top-bar h2 {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* FILTER BAR */
+.filter-bar {
+  max-width: 1200px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 0 20px;
+}
+
+.filter-bar input,
+.filter-bar select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* COURSE LIST */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 25px;
+}
+
+.course-card {
+  display: flex;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+/* LEFT BORDER */
+.course-left {
+  width: 6px;
+  background: #3f51b5;
+  border-radius: 10px 0 0 10px;
+}
+
+/* CONTENT */
+.course-content {
+  padding: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.course-content h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.category {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.instructor {
+  font-size: 14px;
+  color: #444;
+}
+
+/* BUTTON */
+.enroll-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: #ff4d4d;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.enroll-btn:hover {
+  background: #e63c3c;
+}

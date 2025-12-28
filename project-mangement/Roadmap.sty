@@ -1,0 +1,145 @@
+Overall System Architecture Diagram
+
++--------------------+
+|     Student        |
+|  (Web / Mobile)    |
++---------+----------+
+          |
+          v
++--------------------+
+|   Frontend UI      |
+| (HTML/CSS/JS/React)|
++---------+----------+
+          |
+          v
++--------------------+
+|   Backend Server   |
+| (PHP / Node / API) |
++----+----+----+----+
+     |    |    |
+     |    |    |
+     v    v    v
++------+ +------+ +----------------+
+| Auth | |Project| | Payment Gateway|
+|Module| |Module | | (Razorpay)     |
++------+ +------+ +----------------+
+     |
+     v
++--------------------+
+|   Database         |
+| (MySQL/Firebase)  |
++--------------------+
+     |
+     v
++--------------------+
+| File Storage       |
+| (Source Code, PDFs)|
++--------------------+
+
+Module-Based System Diagram
+
++--------------------------------------------------+
+|                STUDENT USER                      |
++--------------------------------------------------+
+            |
+            v
++--------------------+
+| Login / Register   |
+| (Auth Module)      |
++--------------------+
+            |
+            v
++--------------------+
+| Project Categories |
+| (AI, IoT, Web...)  |
++--------------------+
+            |
+            v
++--------------------+
+| Search & Filter    |
+| (Search Module)   |
++--------------------+
+            |
+            v
++--------------------+
+| Project Detail     |
+| (Description Page)|
++--------------------+
+            |
+            v
++--------------------+
+| Purchase Project   |
+| (Payment Module)  |
++--------------------+
+            |
+            v
++--------------------+
+| Download & Access  |
+| (Access Module)   |
++--------------------+
+
+Admin Module Diagram
+
++--------------------+
+|       Admin        |
++---------+----------+
+          |
+          v
++--------------------+
+| Admin Login        |
++--------------------+
+          |
+          v
++------------------------------+
+| Admin Dashboard              |
++------------------------------+
+| - Manage Categories          |
+| - Add/Edit Projects          |
+| - Upload Files               |
+| - Manage Users               |
+| - View Purchases & Reports   |
++------------------------------+
+
+Project Detail Page Structure Diagram
+
++--------------------------------------+
+|          Project Title               |
++--------------------------------------+
+| Objective                            |
++--------------------------------------+
+| Problem Statement                    |
++--------------------------------------+
+| System Architecture (Diagram)        |
++--------------------------------------+
+| Workflow                             |
++--------------------------------------+
+| Hardware Requirements                |
++--------------------------------------+
+| Software Requirements                |
++--------------------------------------+
+| Features & Expected Outcomes         |
++--------------------------------------+
+| Demo Video / Screenshots             |
++--------------------------------------+
+| Price  |  Buy Now Button             |
++--------------------------------------+
+
+Development Roadmap Diagram
+
+[ Requirement Analysis ]
+          |
+          v
+[ System Design ]
+          |
+          v
+[ Module Development ]
+(Auth → Project → Payment → Download)
+          |
+          v
+[ Testing ]
+          |
+          v
+[ Deployment ]
+          |
+          v
+[ Future Enhancements ]

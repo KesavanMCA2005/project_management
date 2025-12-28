@@ -1,0 +1,222 @@
+/* ===============================
+   GLOBAL STYLES
+================================ */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===============================
+   CUSTOM SCROLL BAR
+================================ */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e9f4f6;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0c8fa3;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff9f2f;
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #0c8fa3 #e9f4f6;
+}
+
+/* ===============================
+   NAVBAR (SEPARATE WHITE BAR)
+================================ */
+.navbar {
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 12px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.navbar-brand {
+    color: #0c8fa3 !important;
+    font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+    color: #333 !important;
+    font-size: 15px;
+    margin: 0 12px;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff9f2f !important;
+}
+
+/* ===============================
+   PROJECT DROPDOWN MENU
+================================ */
+.project-dropdown {
+    width: 260px;
+    padding: 14px 0;
+    border-radius: 14px;
+    border: none;
+    background: #ffffff;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.project-dropdown .dropdown-item {
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    transition: all 0.2s ease;
+}
+
+.project-dropdown .dropdown-item:hover {
+    background: #f4f9fb;
+    color: #0c8fa3;
+}
+
+/* Desktop hover support */
+@media (min-width: 992px) {
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+    }
+}
+
+/* Internship button */
+.btn-register {
+    background: #ff9f2f;
+    color: #ffffff;
+    border-radius: 30px;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+}
+
+.btn-register:hover {
+    background: #ff8c00;
+    color: #ffffff;
+}
+
+/* ===============================
+   HERO SECTION
+================================ */
+.hero {
+    min-height: 100vh;
+    padding-top: 90px; /* space for navbar */
+    background: url("assets/hero-bg.jpg") center right / cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 140, 160, 0.92);
+}
+
+.hero-content {
+    position: relative;
+    color: #ffffff;
+    max-width: 720px;
+}
+
+/* YouTube label */
+.youtube-text {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #ffb703;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+/* Hero heading */
+.hero h1 {
+    font-size: 58px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Hero paragraph */
+.hero p {
+    font-size: 16px;
+    line-height: 1.8;
+    opacity: 0.95;
+}
+
+/* ===============================
+   BUTTONS & QUICK LINKS
+================================ */
+.btn-projects {
+    background: #ff9f2f;
+    color: #ffffff;
+    border-radius: 30px;
+    padding: 12px 34px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+}
+
+.btn-projects:hover {
+    background: #ff8c00;
+    color: #ffffff;
+}
+
+.quick-links {
+    margin-top: 18px;
+}
+
+.quick-links a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 8px;
+    opacity: 0.95;
+}
+
+.quick-links a:hover {
+    opacity: 1;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .btn-register {
+        display: none;
+    }
+}
